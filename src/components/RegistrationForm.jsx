@@ -72,6 +72,7 @@ const RegistrationForm = () => {
 
                 <button type="submit" className='submit'>CADASTRAR</button>
             </form>
+            <a href="./src/components/Login.jsx"> Já tem uma Conta?</a>
         </div>
     );
 }
