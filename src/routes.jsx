@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
-import Registro from "./components/RegistrationForm";
-import Login from "./components/Login";
+import Registro from "./pages/RegistrationForm";
+import Login from "./pages/Login";
 
 function Rotas() {
     return (

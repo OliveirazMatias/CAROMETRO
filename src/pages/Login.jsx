@@ -21,7 +21,7 @@
         return (
             <div className='container'>
                 <div className='head'>
-                    <img src="./src/components/senai.png" alt="logo" width={300} />
+                    <img src="./src/img/senai.png" alt="logo" width={300} />
                 </div>
                 <h2 className="article-title">LOGIN</h2>
                 <form onSubmit={handleSubmit}> <br />
