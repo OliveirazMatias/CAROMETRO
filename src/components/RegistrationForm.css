@@ -11,7 +11,7 @@ body{
 }
 
 .container {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Josefin Sans';
   background-color: #c0161e;
   color: #f5f5f5; 
   align-items: center;
@@ -36,7 +36,7 @@ body{
 }
 
 form {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Raleway';
   background-color: #f1f1f1;
   color: #a42323;
   padding: 10px;
@@ -46,11 +46,14 @@ form {
   justify-content: center;
   width: 350px;
   align-items: center;
+  font-size: 15px;
 }
 
 .submit{
   margin-top: 3%;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Josefin Sans';font-size: 22px;
   background-color: #CB6B6B;
   color: #a42323;
+  font-size: 15px;
+  margin-bottom: 20px;
 }

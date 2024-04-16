@@ -1,11 +1,13 @@
 import React from 'react';
-import RegistrationForm from './components/RegistrationForm';
+import { BrowserRouter } from 'react-router-dom';
+import Rotas from './routes';
+import Cadastro from './components/RegistrationForm';
 
 function App() {
   return (
-    <div className="App">
-      <RegistrationForm />
-    </div>
+    <BrowserRouter>
+      <Rotas/>
+    </BrowserRouter>
   );
 }
 
