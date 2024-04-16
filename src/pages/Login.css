@@ -57,3 +57,7 @@ form {
   font-size: 15px;
   margin-bottom: 20px;
 }
+
+label {
+  font-family: 'Raleway';
+}

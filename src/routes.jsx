@@ -5,12 +5,10 @@ import Login from "./pages/Login";
 function Rotas() {
     return (
         <div>
-
             <Routes>
                 <Route path="/" element={<Registro />} />
                 <Route path="/login" element={<Login />} />
             </Routes>
-
         </div>
     )
 }
