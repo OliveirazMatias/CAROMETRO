@@ -5,10 +5,10 @@ function TurmasScreen() {
   const [selectedTurma, setSelectedTurma] = useState(null);
   const turmaOptions = [
     { id: 'IDEV1', label: 'IDEV1' },
-    { id: 'IELE/MEC1', label: 'IELE/MEC1' },
     { id: 'IDEV2', label: 'IDEV2' },
-    { id: 'IELE/MEC2', label: 'IELE/MEC2' },
     { id: 'IDEV3', label: 'IDEV3' },
+    { id: 'IELE/MEC1', label: 'IELE/MEC1' },
+    { id: 'IELE/MEC2', label: 'IELE/MEC2' },
     { id: 'IELE/MEC3', label: 'IELE/MEC3' },
   ];
 
@@ -26,30 +26,43 @@ function TurmasScreen() {
 
   return (
     <>
-
       <header>
-        <img src="./src/img/senaipreta.png" alt="logo senai" width={220}/>
+        <img src="./src/img/senaipreta.png" alt="logo senai" width={220} />
         <img src="./src/img/icon.png" alt="icon" width={50} />
       </header>
       <div className="al">
         <h1>TURMAS</h1>
         <div className="turmas-container">
-          <h2>ESCOLHA A TURMA</h2>
-          <div className="turma-options">
-            {turmaOptions.map((turma) => (
-              <label key={turma.id}>
-                <input
-                  type="checkbox"
-                  checked={selectedTurma === turma.id}
-                  onChange={() => handleTurmaSelect(turma.id)}
-                />
-                {turma.label}
-              </label>
-            ))}
+          <div className='titulo'>
+            <h2>ESCOLHA A TURMA</h2>
           </div>
-          {selectedTurma && (
-            <p className="warning"># SÓ ESCOLHA UMA!</p>
-          )}
+          <div className="turma-options">
+            <div className="ile-dev">
+            <div className='idev'>
+              <label>
+                <input type="checkbox" /> IDEV-1
+              </label>
+              <label>
+                <input type="checkbox" /> IDEV-2
+              </label>
+              <label>
+                <input type="checkbox" /> IDEV-3
+              </label>
+            </div>
+            <div className='ilecmec'>
+            <label>
+                <input type="checkbox" /> ILEC/MEC-1
+              </label>
+              <label>
+                <input type="checkbox" /> ILEC/MEC-2
+              </label>
+              <label>
+                <input type="checkbox" /> ILEC/MEC-3
+              </label>
+            </div>
+            </div>
+          </div>
+          
           <button className="confirmar" onClick={handleConfirm}>CONFIRMAR</button>
         </div>
 

@@ -30,7 +30,7 @@ const RegistrationForm = () => {
             </div>
             <h2 className="article-title">CADASTRO</h2>
             <form onSubmit={handleSubmit}> <br />
-                <label htmlFor="email">E-MAIL:</label>
+                <label className='label' htmlFor="email">E-MAIL:</label>
                 <input
                     type="email"
                     id="email"
@@ -40,7 +40,7 @@ const RegistrationForm = () => {
                     required
                 /> <br />
 
-                <label htmlFor="password">SENHA:</label>
+                <label className='label' htmlFor="password">SENHA:</label>
                 <input
                     type="password"
                     id="password"
@@ -50,7 +50,7 @@ const RegistrationForm = () => {
                     required
                 /> <br />
 
-                <label htmlFor="confirmPassword">CONFIRMAR SENHA:</label>
+                <label className='label' htmlFor="confirmPassword">CONFIRMAR SENHA:</label>
                 <input
                     type="password"
                     id="confirmPassword"
@@ -60,7 +60,7 @@ const RegistrationForm = () => {
                     required
                 /> <br /> 
 
-                <label htmlFor="name">NOME:</label>
+                <label className='label' htmlFor="name">NOME:</label>
                 <input
                     type="text"
                     id="name"
