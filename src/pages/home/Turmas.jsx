@@ -38,31 +38,31 @@ function TurmasScreen() {
           </div>
           <div className="turma-options">
             <div className="ile-dev">
-            <div className='idev'>
-              <label>
-                <input type="checkbox" /> IDEV-1
-              </label>
-              <label>
-                <input type="checkbox" /> IDEV-2
-              </label>
-              <label>
-                <input type="checkbox" /> IDEV-3
-              </label>
-            </div>
-            <div className='ilecmec'>
-            <label>
-                <input type="checkbox" /> ILEC/MEC-1
-              </label>
-              <label>
-                <input type="checkbox" /> ILEC/MEC-2
-              </label>
-              <label>
-                <input type="checkbox" /> ILEC/MEC-3
-              </label>
-            </div>
+              <div className='idev'>
+                <label>
+                  <input type="checkbox" /> IDEV-1
+                </label>
+                <label>
+                  <input type="checkbox" /> IDEV-2
+                </label>
+                <label>
+                  <input type="checkbox" /> IDEV-3
+                </label>
+              </div>
+              <div className='ilecmec'>
+                <label>
+                  <input type="checkbox" /> ILEC/MEC-1
+                </label>
+                <label>
+                  <input type="checkbox" /> ILEC/MEC-2
+                </label>
+                <label>
+                  <input type="checkbox" /> ILEC/MEC-3
+                </label>
+              </div>
             </div>
           </div>
-          
+          <p># ESCOLHER APENAS UM!</p>
           <button className="confirmar" onClick={handleConfirm}>CONFIRMAR</button>
         </div>
 
