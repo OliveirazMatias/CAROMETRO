@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-body{
+body {
   margin: 0;
   width: 100%;
   height: 100%;
@@ -13,7 +13,6 @@ body{
 .container {
   font-family: 'Josefin Sans';
   background-color: #c0161e;
-  color: #f5f5f5; 
   align-items: center;
   justify-content: center;
   display: flex;
@@ -32,7 +31,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 20px; 
+  margin-bottom: 20px;
 }
 
 form {
@@ -40,7 +39,7 @@ form {
   background-color: #f1f1f1;
   color: #a42323;
   padding: 10px;
-  border-radius: 12px; 
+  border-radius: 12px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -49,10 +48,11 @@ form {
   font-size: 15px;
 }
 
-.submit{
+.submit {
   margin-top: 3%;
-  font-family: 'Josefin Sans';font-size: 22px;
-  background-color: #CB6B6B;
+  font-family: 'Josefin Sans';
+  font-size: 22px;
+  background-color: #cb6b6b;
   color: #a42323;
   font-size: 15px;
   margin-bottom: 20px;
@@ -60,4 +60,5 @@ form {
 
 label {
   font-family: 'Raleway';
+  color: #a42323; 
 }

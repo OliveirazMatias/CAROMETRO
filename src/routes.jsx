@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom";
-import Registro from "./pages/RegistrationForm";
-import Login from "./pages/Login";
+import Registro from "./pages/cadastro/RegistrationForm";
+import Login from "./pages/login/Login";
+import Turmas from "./pages/home/Turmas";
 
 function Rotas() {
     return (
@@ -8,6 +9,7 @@ function Rotas() {
             <Routes>
                 <Route path="/" element={<Registro />} />
                 <Route path="/login" element={<Login />} />
+                <Route path="/turmas" element={<Turmas />} />
             </Routes>
         </div>
     )
