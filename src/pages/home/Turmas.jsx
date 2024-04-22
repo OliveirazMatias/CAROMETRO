@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Turmas.css';
 
+
 function TurmasScreen() {
   const [selectedTurma, setSelectedTurma] = useState(null);
   const turmaOptions = [
@@ -39,26 +40,42 @@ function TurmasScreen() {
           <div className="turma-options">
             <div className="ile-dev">
               <div className='idev'>
-                <label>
-                  <input type="checkbox" /> IDEV-1
-                </label>
-                <label>
-                  <input type="checkbox" /> IDEV-2
-                </label>
-                <label>
-                  <input type="checkbox" /> IDEV-3
-                </label>
+                <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                  <div class="container-fluid">
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                      <ul class="navbar-nav">
+                        <li class="nav-item">
+                          <a class="nav-link" href="/idev1">IDEV-1</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="/idev2">IDEV-2</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="/idev3">IDEV-3</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </nav>
               </div>
               <div className='ilecmec'>
-                <label>
-                  <input type="checkbox" /> ILEC/MEC-1
-                </label>
-                <label>
-                  <input type="checkbox" /> ILEC/MEC-2
-                </label>
-                <label>
-                  <input type="checkbox" /> ILEC/MEC-3
-                </label>
+                <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                  <div class="container-fluid">
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                      <ul class="navbar-nav">
+                        <li class="nav-item">
+                          <a class="nav-link active" href="/ilecmec1">ILEMEC-1</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="/ilecmec2">ILEMEC-2</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="/ilecmec3">ILEMEC-3</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </nav>
               </div>
             </div>
           </div>
