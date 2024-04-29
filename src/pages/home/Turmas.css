@@ -77,6 +77,7 @@
 
   .nav-link-idev1:hover {
     background-color: #5d1515;
+    background-image: url("./src/img/loboidev1.jpg");
     background-size: cover;
     background-position: center;
   }
@@ -129,6 +130,7 @@
 
   .nav-link-ilecmec1:hover {
     background-color: #5d1515;
+    background-image: url("./src/img/tigreilecmec1.jpg");
     background-size: cover;
     background-position: center;
   }
@@ -146,6 +148,7 @@
 
   .nav-link-ilecmec2:hover {
     background-color: #5d1515;
+    background-image: url("./src/img/sapoilecmec2.jpg");
     background-size: cover;
     background-position: center;
   }
@@ -167,7 +170,7 @@
     background-position: center;
   }
 
-  .fenix {
+  .img {
     border-radius: 50px;
   }
 
