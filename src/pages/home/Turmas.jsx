@@ -2,29 +2,7 @@ import React, { useState } from 'react';
 import './Turmas.css';
 
 
-function TurmasScreen() {
-  const [selectedTurma, setSelectedTurma] = useState(null);
-  const turmaOptions = [
-    { id: 'IDEV1', label: 'IDEV1' },
-    { id: 'IDEV2', label: 'IDEV2' },
-    { id: 'IDEV3', label: 'IDEV3' },
-    { id: 'IELE/MEC1', label: 'IELE/MEC1' },
-    { id: 'IELE/MEC2', label: 'IELE/MEC2' },
-    { id: 'IELE/MEC3', label: 'IELE/MEC3' },
-  ];
-
-  const handleTurmaSelect = (turmaId) => {
-    setSelectedTurma(turmaId);
-  };
-
-  const handleConfirm = () => {
-    if (selectedTurma) {
-      console.log(`Selected Turma: ${selectedTurma}`);
-    } else {
-      console.log('Please choose a turma before confirming.');
-    }
-  };
-
+function Turmas() {
   return (
     <>
       <header>
@@ -44,15 +22,15 @@ function TurmasScreen() {
                   <div class="container-fluid">
                     <div class="collapse navbar-collapse" id="navbarNav">
                       <ul class="navbar-nav">
-                        <li class="nav-item">
-                          <a class="nav-link" href="/idev1">IDEV-1</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="/idev2">IDEV-2</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="/idev3">IDEV-3</a>
-                        </li>
+                        <ul class="nav-item">
+                          <a class="nav-link-idev1" href="/idev1">IDEV-1</a>
+                        </ul>
+                        <ul class="nav-item">
+                          <a class="nav-link-idev2" href="/idev2">IDEV-2</a>
+                        </ul>
+                        <ul class="nav-item">
+                          <a class="nav-link-idev3" href="/idev3">IDEV-3</a>
+                        </ul>
                       </ul>
                     </div>
                   </div>
@@ -63,15 +41,15 @@ function TurmasScreen() {
                   <div class="container-fluid">
                     <div class="collapse navbar-collapse" id="navbarNav">
                       <ul class="navbar-nav">
-                        <li class="nav-item">
-                          <a class="nav-link active" href="/ilecmec1">ILEMEC-1</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="/ilecmec2">ILEMEC-2</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="/ilecmec3">ILEMEC-3</a>
-                        </li>
+                        <ul class="nav-item">
+                          <a class="nav-link-ilecmec1" href="/ilecmec1">ILEMEC-1</a>
+                        </ul>
+                        <ul class="nav-item">
+                          <a class="nav-link-ilecmec2" href="/ilecmec2">ILEMEC-2</a>
+                        </ul>
+                        <ul class="nav-item">
+                          <a class="nav-link-ilecmec3" href="/ilecmec3">ILEMEC-3</a>
+                        </ul>
                       </ul>
                     </div>
                   </div>
@@ -79,8 +57,6 @@ function TurmasScreen() {
               </div>
             </div>
           </div>
-          <p># ESCOLHER APENAS UM!</p>
-          <button className="confirmar" onClick={handleConfirm}>CONFIRMAR</button>
         </div>
 
       </div>
@@ -88,4 +64,4 @@ function TurmasScreen() {
   );
 }
 
-export default TurmasScreen;
+export default Turmas;

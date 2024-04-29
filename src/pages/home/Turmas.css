@@ -1,111 +1,220 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-* {
-  margin: 0;
-  padding: 0;
-}
+  * {
+    margin: 0;
+    padding: 0;
+  }
 
-body {
-  display: flex;
-  justify-content: flex-start;
-}
+  body {
+    display: flex;
+    justify-content: flex-start;
+  }
 
-header {
-  background-color: #200202;
-  width: 98.6vw;
-  height: auto;
-  padding: 11px;
-  display: flex;
-  justify-content: space-between;
-}
+  header {
+    background-color: #200202;
+    width: 98.6vw;
+    height: auto;
+    padding: 11px;
+    display: flex;
+    justify-content: space-between;
+  }
 
-.al {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  flex-wrap: wrap;
-  margin-top: 9vh;
-}
+  .al {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 9vh;
+  }
 
-.turmas-container {
-  font-family: 'Josefin Sans';
-  padding: 20px;
-  background-color: #804141;
-  border-radius: 10px;
-  margin: 20px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-}
+  .turmas-container {
+    font-family: 'Josefin Sans';
+    padding: 40px;
+    background-color: #804141;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-h1 {
-  color: #f1f1f1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2rem;
-  margin-bottom: 10px;
-}
+  h1 {
+    color: #f1f1f1;
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
 
-.titulo {
-  color: #f1f1f1;
-  font-size: 1.0rem;
-  margin-bottom: 10px;
-}
+  .titulo {
+    color: #f1f1f1;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
 
-.turma-options {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
+  .turma-options {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 800px;
+  }
 
-.nav-link{
-  color: #f1f1f1;
-}
+  .nav-item {
+    padding: 11px;
+  }
 
-.idev {
-  color: #f1f1f1;
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-  border-color: #ffff;
-}
+  .nav-link-idev1 {
+    color: #f1f1f1;
+    font-size: 1.5rem;
+    padding: 15px;
+    background-color: #804141;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
 
-.ile-dev {
-  font-family: 'Raleway';
-  display: flex;
-  justify-content: space-between;
-}
+  .nav-link-idev1:hover {
+    background-color: #5d1515;
+    background-size: cover;
+    background-position: center;
+  }
 
-.ilecmec {
-  color: #f1f1f1;
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-}
+  .nav-link-idev2 {
+    color: #f1f1f1;
+    font-size: 1.5rem;
+    padding: 15px;
+    background-color: #804141;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
 
-.warning {
-  color: rgb(255, 255, 255);
-  font-size: 1rem;
-  margin-top: 10px;
-  padding: 10px;
-}
+  .nav-link-idev2:hover {
+    background-color: #5d1515;
+    background-image: url('./src/img/fenixidev2.jpg');
+    background-size: cover;
+    background-position: center;
+  }
 
-.confirmar {
-  border-radius: 8px;
-  margin-top: 20px;
-  padding: 10px 20px;
-  font-size: 1.2rem;
-  background-color: #488d4a;
-  display: flex;
-  flex-direction: column;
-  color: #2d6a2b;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
+  .nav-link-idev3 {
+    color: #f1f1f1;
+    font-size: 1.5rem;
+    padding: 15px;
+    background-color: #804141;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
 
-p {
-  color: #f1f1f1;
-  display: flex;
-  flex-direction: column;
-}
+  .nav-link-idev3:hover {
+    background-color: #5d1515;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .nav-link-ilecmec1 {
+    color: #f1f1f1;
+    font-size: 1.5rem;
+    padding: 15px;
+    background-color: #804141;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .nav-link-ilecmec1:hover {
+    background-color: #5d1515;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .nav-link-ilecmec2 {
+    color: #f1f1f1;
+    font-size: 1.5rem;
+    padding: 15px;
+    background-color: #804141;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .nav-link-ilecmec2:hover {
+    background-color: #5d1515;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .nav-link-ilecmec3 {
+    color: #f1f1f1;
+    font-size: 1.5rem;
+    padding: 15px;
+    background-color: #804141;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .nav-link-ilecmec3:hover {
+    background-color: #5d1515;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .fenix {
+    border-radius: 50px;
+  }
+
+  .idev {
+    color: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-color: #ffff;
+  }
+
+  .ile-dev {
+    font-family: 'Raleway';
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .ilecmec {
+    color: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .warning {
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    margin-top: 10px;
+    padding: 10px;
+  }
+
+  .confirmar {
+    border-radius: 8px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #488d4a;
+    display: flex;
+    flex-direction: column;
+    color: #2d6a2b;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  p {
+    color: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+  }
